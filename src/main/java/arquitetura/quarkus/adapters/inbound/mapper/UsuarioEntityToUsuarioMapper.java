@@ -1,12 +1,12 @@
 package arquitetura.quarkus.adapters.inbound.mapper;
 
-import arquitetura.quarkus.adapters.inbound.request.UsuarioRequest;
+import arquitetura.quarkus.adapters.inbound.entity.UsuarioEntity;
 import arquitetura.quarkus.application.core.domain.Usuario;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "cdi")
-public interface UsuarioRequestToUsuarioMapper {
+public interface UsuarioEntityToUsuarioMapper {
 
-    Usuario mapper(UsuarioRequest usuarioRequest);
+     Usuario mapper(UsuarioEntity usuario);
 
 }

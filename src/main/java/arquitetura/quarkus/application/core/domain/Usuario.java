@@ -17,7 +17,7 @@ public class Usuario {
 
     private LocalDate dataNascimento;
 
-//    private Endereco endereco;
+    private Endereco endereco;
 
     public Long getId() {
         return id;
@@ -67,6 +67,13 @@ public class Usuario {
         this.dataNascimento = dataNascimento;
     }
 
+    public Endereco getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
+    }
 
     public Integer getIdade() {
         return Period.between(dataNascimento, LocalDate.now()).getYears();

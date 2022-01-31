@@ -5,8 +5,6 @@ import arquitetura.quarkus.adapters.inbound.request.UsuarioRequest;
 import arquitetura.quarkus.application.core.domain.Usuario;
 import arquitetura.quarkus.application.ports.in.SalvarUsuarioServicePort;
 
-import javax.enterprise.context.ApplicationScoped;
-import javax.inject.Inject;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;

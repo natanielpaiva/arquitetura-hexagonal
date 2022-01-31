@@ -1,5 +1,6 @@
 package arquitetura.quarkus.application.core.service;
 
+import arquitetura.quarkus.application.core.domain.Endereco;
 import arquitetura.quarkus.application.core.domain.Usuario;
 import arquitetura.quarkus.application.ports.in.SalvarUsuarioServicePort;
 import arquitetura.quarkus.application.ports.out.SalvarUsuarioPort;
@@ -21,6 +22,9 @@ public class SalvarUsuarioService implements SalvarUsuarioServicePort {
 
 //        var endereco = buscarEnderecoPort.buscar(cep);
 //        usuario.setEndereco(endereco);
+        var endereco = new Endereco();
+        endereco.setCep(cep);
+        usuario.setEndereco(endereco);
 
         return salvarUsuarioPort.salvar(usuario);
     }
