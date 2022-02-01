@@ -5,9 +5,6 @@ import arquitetura.quarkus.application.ports.in.SalvarUsuarioServicePort;
 import arquitetura.quarkus.application.ports.out.BuscarEnderecoPort;
 import arquitetura.quarkus.application.ports.out.SalvarUsuarioPort;
 
-import javax.enterprise.context.ApplicationScoped;
-
-@ApplicationScoped
 public class SalvarUsuarioService implements SalvarUsuarioServicePort {
 
     private final SalvarUsuarioPort salvarUsuarioPort;
